@@ -3,25 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FAB9DBB82D0B8C4200555578 /* TARSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9DBB72D0B8C4200555578 /* TARSApp.swift */; };
-		FAB9DBBA2D0B8C4200555578 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9DBB92D0B8C4200555578 /* ContentView.swift */; };
-		FAB9DBBC2D0B8C4400555578 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB9DBBB2D0B8C4400555578 /* Assets.xcassets */; };
-		FAB9DBBF2D0B8C4400555578 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB9DBBE2D0B8C4400555578 /* Preview Assets.xcassets */; };
 		FAB9DBC62D0B8D4600555578 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAB9DBC52D0B8D4600555578 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAB9DBB42D0B8C4200555578 /* tars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tars.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB9DBB72D0B8C4200555578 /* TARSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TARSApp.swift; sourceTree = "<group>"; };
-		FAB9DBB92D0B8C4200555578 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FAB9DBBB2D0B8C4400555578 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAB9DBBE2D0B8C4400555578 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAB9DBC52D0B8D4600555578 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FA5EB4362D15F69B007D496D /* TARS */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TARS; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAB9DBB12D0B8C4200555578 /* Frameworks */ = {
@@ -38,7 +34,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB9DBC52D0B8D4600555578 /* README.md */,
-				FAB9DBB62D0B8C4200555578 /* TARS */,
+				FA5EB4362D15F69B007D496D /* TARS */,
 				FAB9DBB52D0B8C4200555578 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +45,6 @@
 				FAB9DBB42D0B8C4200555578 /* tars.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FAB9DBB62D0B8C4200555578 /* TARS */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9DBB72D0B8C4200555578 /* TARSApp.swift */,
-				FAB9DBB92D0B8C4200555578 /* ContentView.swift */,
-				FAB9DBBB2D0B8C4400555578 /* Assets.xcassets */,
-				FAB9DBBD2D0B8C4400555578 /* Preview Content */,
-			);
-			path = TARS;
-			sourceTree = "<group>";
-		};
-		FAB9DBBD2D0B8C4400555578 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FAB9DBBE2D0B8C4400555578 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +61,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FA5EB4362D15F69B007D496D /* TARS */,
 			);
 			name = tars;
 			productName = tars;
@@ -129,8 +109,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB9DBC62D0B8D4600555578 /* README.md in Resources */,
-				FAB9DBBF2D0B8C4400555578 /* Preview Assets.xcassets in Resources */,
-				FAB9DBBC2D0B8C4400555578 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAB9DBBA2D0B8C4200555578 /* ContentView.swift in Sources */,
-				FAB9DBB82D0B8C4200555578 /* TARSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,17 +258,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coden0w.tars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -311,17 +287,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.coden0w.tars;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
