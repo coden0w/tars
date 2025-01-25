@@ -6,8 +6,23 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+    
+    @Dependency private var fooUseCase: FooUseCase
+    
+    func test() {
+        Task {
+            do {
+                let response = try await fooUseCase.execute("Swift 6")
+                print(response)
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +31,9 @@ struct ContentView: View {
             Text("Hello, world!")
         }
         .padding()
+        .onAppear {
+            test()
+        }
     }
 }
 

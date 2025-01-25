@@ -15,6 +15,15 @@ public actor ApiRepositoryImpl: ApiRepository {
     public var `protocol`: String
     public var server: String
     
+    /**
+     Static method to get the shared instance of the repository. If it doesn't exist, a new one is created.
+     
+     - Parameters:
+     - protocol: The protocol to use for requests (HTTP/HTTPS).
+     - server: The server address to connect to.
+     
+     - Returns: An instance of `ApiRepository`.
+     */
     public static func shared(`protocol`: String,
                               server: String) -> ApiRepository {
         if let instance = ApiRepositoryImpl.instance {
@@ -29,6 +38,13 @@ public actor ApiRepositoryImpl: ApiRepository {
     
     // MARK: - Init
     
+    /**
+     Private initializer for the repository.
+     
+     - Parameters:
+     - protocol: The protocol to use for requests (HTTP/HTTPS).
+     - server: The server address to connect to.
+     */
     internal init(`protocol`: String,
                   server: String) {
         self.protocol = `protocol`
@@ -37,6 +53,12 @@ public actor ApiRepositoryImpl: ApiRepository {
     
     // MARK: - Methods
 
+    /**
+     Example asynchronous method to simulate an API request.
+     
+     - Returns: A string with the value "Foo".
+     - Throws: May throw errors depending on the implementation.
+     */
     public func foo() async throws -> String {
         return "Foo"
     }
@@ -58,7 +80,17 @@ fileprivate extension ApiRepositoryImpl {
         case json = "application/json"
         case form = "application/x-www-form-urlencoded"
     }
-    
+    /**
+     Creates a `URLRequest` for the API.
+     
+     - Parameters:
+     - url: The URL to which the request will be sent.
+     - method: The HTTP method (GET, POST).
+     - encoding: The content encoding type.
+     - authorization: An optional authorization token to include in the headers.
+     
+     - Returns: A configured `URLRequest` object with the specified values.
+     */
     func request(url: URL,
                  method: RequestMethod,
                  encodig: EncodingType,
@@ -72,12 +104,28 @@ fileprivate extension ApiRepositoryImpl {
         return request
     }
     
+    /**
+     Sets the authorization header for the request if needed.
+     
+     - Parameters:
+     - request: The request to modify.
+     - authorization: The authorization token to add to the header (optional).
+     */
     func setAuthorization(request: inout URLRequest, authorization: String? = nil) {
         if let authorization {
             request.setValue(authorization, forHTTPHeaderField: "Authorization")
         }
     }
     
+    /**
+     Makes an asynchronous request and handles the response.
+     
+     - Parameters:
+     - request: The request to be sent.
+     
+     - Returns: The response data and HTTP response.
+     - Throws: Throws an error if the request fails or if the response has an error status code.
+     */
     func response(request: URLRequest) async throws -> (Data, URLResponse) {
         do {
             let result = try await URLSession.shared.data(for: request)
@@ -88,8 +136,15 @@ fileprivate extension ApiRepositoryImpl {
         }
     }
     
+    /**
+     Checks the HTTP status code of the response and throws an error if it's not successful.
+     
+     - Parameters:
+     - result: The tuple containing the response data and the HTTP response.
+     - Throws: Throws an error if the HTTP status code indicates a failure (e.g., 400 or 500).
+     */
     func checkResponse(_ result: (Data, URLResponse)) throws {
-        let (data, response) = result
+        let (_, response) = result
         if let httpResponse = response as? HTTPURLResponse {
             switch httpResponse.statusCode {
             case 200...299:
