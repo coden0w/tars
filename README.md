@@ -20,26 +20,42 @@ Inside of your project, you'll see the following folders and files:
 │ 
 ├── TARS/
 │   ├── Application/
-│   │   ├── TARSApp
-│   │   ├── AppDelegate
-│   │   ├── DependencyInjector
+│   │   ├── TARSApp.swift
+│   │   ├── AppDelegate.swift
+│   │   ├── DependencyInjector.swift
 │   │   ├── Base/
-│   │   │   ├── Coordinator
-│   │   │   ├── Errors
-│   │   │   ├── LifeCycle
-│   │   │   ├── Navigable
-│   │   │   ├── ViewModel
+│   │   │   ├── Coordinator.swift
+│   │   │   ├── Errors.swift
+│   │   │   ├── LifeCycle.swift
+│   │   │   ├── Navigable.swift
+│   │   │   ├── ViewModel.swift
 │   │   │   └── Loadable/
-│   │   │       ├── Loading
-│   │   │       └── LoadingDelegate
+│   │   │       ├── Loading.swift
+│   │   │       └── LoadingDelegate.swift
 │   │   ├── Configuration/
-│   │   │   └── *
+│   │   │   ├── Environment.swift
+│   │   │   ├── Info.plist
+│   │   │   ├── PRE.xconfig
+│   │   │   └── PRO.xconfig
 │   │   └── Managers/
 │   │       └── *
 │   └── Presentation/
 ├── Domain/
+│   ├── Repository/
+│   │   ├── ApiRepository.swift
+│   │   └── *
+│   ├── UseCase/
+│   │   ├── Protocol/
+│   │   │   └── UseCase.swift
+│   │   └── FooUseCase.swift
 │   └── *
 ├── Data/
+│   ├── Repository/
+│   │   ├── ApiRepositoryImpl.swift
+│   │   └── *
+│   ├── Constants/
+│   │   ├── RepositoryConstants.swift
+│   │   └── *
 │   └── *
 ├── Products/
 │   └── *

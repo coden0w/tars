@@ -12,8 +12,7 @@ import Domain
 public actor ApiRepositoryImpl: ApiRepository {
     
     private static var instance: ApiRepositoryImpl?
-    public var `protocol`: String
-    public var server: String
+    public var baseURL: String
     
     /**
      Static method to get the shared instance of the repository. If it doesn't exist, a new one is created.
@@ -47,8 +46,7 @@ public actor ApiRepositoryImpl: ApiRepository {
      */
     internal init(`protocol`: String,
                   server: String) {
-        self.protocol = `protocol`
-        self.server = server
+        self.baseURL = String(format: "%@://%@", `protocol`, server)
     }
     
     // MARK: - Methods
@@ -60,6 +58,14 @@ public actor ApiRepositoryImpl: ApiRepository {
      - Throws: May throw errors depending on the implementation.
      */
     public func foo() async throws -> String {
+        do {
+            let url = try RepositoryConstants.buildURL(baseURL: baseURL,
+                                                       paths: [.api],
+                                                       endpoint: .character,
+                                                       queryParams: ["page":"19"])
+        } catch {
+            throw error
+        }
         return "Foo"
     }
 
