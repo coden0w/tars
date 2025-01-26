@@ -1,0 +1,12 @@
+//
+//  PRO.xcconfig
+//  tars
+//
+//  Created by alexandru.robert on 25/1/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PROTOCOL = https
+SERVER = rickandmortyapi.com
