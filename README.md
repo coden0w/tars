@@ -25,13 +25,12 @@ Inside of your project, you'll see the following folders and files:
 │   │   ├── DependencyInjector.swift
 │   │   ├── Base/
 │   │   │   ├── Coordinator.swift
-│   │   │   ├── Errors.swift
+│   │   │   ├── Errorable.swift
 │   │   │   ├── LifeCycle.swift
 │   │   │   ├── Navigable.swift
 │   │   │   ├── ViewModel.swift
 │   │   │   └── Loadable/
-│   │   │       ├── Loading.swift
-│   │   │       └── LoadingDelegate.swift
+│   │   │       └── Loading.swift
 │   │   ├── Configuration/
 │   │   │   ├── Environment.swift
 │   │   │   ├── Info.plist
@@ -39,7 +38,10 @@ Inside of your project, you'll see the following folders and files:
 │   │   │   └── PRO.xconfig
 │   │   └── Managers/
 │   │       └── *
-│   └── Presentation/
+│   │── Presentation/
+│   │   ├── Coordinators/
+│   │   └── Modules/
+│   │       └── *
 ├── Domain/
 │   ├── Repository/
 │   │   ├── ApiRepository.swift

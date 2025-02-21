@@ -1,2 +1,8 @@
 
 *.xcuserstate
+
+.DS_Store
+
+*.xcbkptlist
+
+tars.xcodeproj/xcuserdata/alexandru.blaga.xcuserdatad/xcschemes/xcschememanagement.plist
