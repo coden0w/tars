@@ -78,24 +78,24 @@
 		892D0CB42D459F6400F48CCA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Configuration/Environment.swift,
-				Configuration/PRE.xcconfig,
-				Configuration/PRO.xcconfig,
+				Application/Configuration/Environment.swift,
+				Application/Configuration/PRE.xcconfig,
+				Application/Configuration/PRO.xcconfig,
 			);
 			target = FA5EB48E2D18C9B2007D496D /* Domain */;
 		};
 		892D0CBA2D45A05D00F48CCA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Configuration/PRE.xcconfig,
-				Configuration/PRO.xcconfig,
+				Application/Configuration/PRE.xcconfig,
+				Application/Configuration/PRO.xcconfig,
 			);
 			target = FA5EB4B62D18CA40007D496D /* Data */;
 		};
 		892D0CD82D45A53C00F48CCA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Configuration/Info.plist,
+				Application/Configuration/Info.plist,
 			);
 			target = FAB9DBB32D0B8C4200555578 /* tars */;
 		};
@@ -374,7 +374,7 @@
 		892D0CC52D45A22300F48CCA /* Debug DEV */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = FA5EB4362D15F69B007D496D /* TARS */;
-			baseConfigurationReferenceRelativePath = Configuration/PRE.xcconfig;
+			baseConfigurationReferenceRelativePath = Application/Configuration/PRE.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -447,7 +447,7 @@
 				DEVELOPMENT_TEAM = 93L3B2G32F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TARS/Configuration/Info.plist;
+				INFOPLIST_FILE = TARS/Application/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,7 +554,7 @@
 		892D0CC92D45A22F00F48CCA /* Release DEV */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = FA5EB4362D15F69B007D496D /* TARS */;
-			baseConfigurationReferenceRelativePath = Configuration/PRO.xcconfig;
+			baseConfigurationReferenceRelativePath = Application/Configuration/PRO.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -620,7 +620,7 @@
 				DEVELOPMENT_TEAM = 93L3B2G32F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TARS/Configuration/Info.plist;
+				INFOPLIST_FILE = TARS/Application/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -725,7 +725,7 @@
 		892D0CCD2D45A23400F48CCA /* Debug PRO */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = FA5EB4362D15F69B007D496D /* TARS */;
-			baseConfigurationReferenceRelativePath = Configuration/PRO.xcconfig;
+			baseConfigurationReferenceRelativePath = Application/Configuration/PRO.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -798,7 +798,7 @@
 				DEVELOPMENT_TEAM = 93L3B2G32F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TARS/Configuration/Info.plist;
+				INFOPLIST_FILE = TARS/Application/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -905,7 +905,7 @@
 		892D0CD12D45A23E00F48CCA /* Release PRO */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReferenceAnchor = FA5EB4362D15F69B007D496D /* TARS */;
-			baseConfigurationReferenceRelativePath = Configuration/PRO.xcconfig;
+			baseConfigurationReferenceRelativePath = Application/Configuration/PRO.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -971,7 +971,7 @@
 				DEVELOPMENT_TEAM = 93L3B2G32F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TARS/Configuration/Info.plist;
+				INFOPLIST_FILE = TARS/Application/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

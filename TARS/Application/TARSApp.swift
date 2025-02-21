@@ -11,10 +11,11 @@ import SwiftUI
 struct TARSApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @ObservedObject var appCoordinator = AppCoordinator.sample
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppCoordinatorView(coordinator: appCoordinator)
         }
     }
 }

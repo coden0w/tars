@@ -59,7 +59,7 @@ public actor ApiRepositoryImpl: ApiRepository {
      */
     public func foo() async throws -> String {
         do {
-            let url = try RepositoryConstants.buildURL(baseURL: baseURL,
+            _ = try RepositoryConstants.buildURL(baseURL: baseURL,
                                                        paths: [.api],
                                                        endpoint: .character,
                                                        queryParams: ["page":"19"])
