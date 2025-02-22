@@ -14,7 +14,7 @@ struct SettingsView: View {
     
     var body: some View {
         ZStack {
-            Text("Hello, Characters")
+            Text("Hello, Settings")
         }
         .bind(lifeCycle: vm)
     }

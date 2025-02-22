@@ -14,25 +14,25 @@ struct TabBarView: View {
     var body: some View {
         ZStack {
             HStack {
-                TabBarItemView(icon: .init(systemName: "rectangle.on.rectangle.circle")!,
+                TabBarItemView(icon: .init(systemName: "circle")!,
                                text: "Characters",
                                width: 24,
                                isSelected: selected == .characters,
                                action: { selected = .characters })
                 Spacer()
-                TabBarItemView(icon: .init(systemName: "rectangle.on.rectangle.circle")!,
+                TabBarItemView(icon: .init(systemName: "circle")!,
                                text: "Episodes",
                                width: 24,
                                isSelected: selected == .episodes,
                                action: { selected = .episodes })
                 Spacer()
-                TabBarItemView(icon: .init(systemName: "rectangle.on.rectangle.circle")!,
+                TabBarItemView(icon: .init(systemName: "circle")!,
                                text: "Seasons",
                                width: 24,
                                isSelected: selected == .seasons,
                                action: { selected = .seasons })
                 Spacer()
-                TabBarItemView(icon: .init(systemName: "rectangle.on.rectangle.circle")!,
+                TabBarItemView(icon: .init(systemName: "circle")!,
                                text: "Settings",
                                width: 24,
                                isSelected: selected == .settings,

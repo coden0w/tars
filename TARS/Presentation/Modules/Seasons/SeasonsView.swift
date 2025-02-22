@@ -14,7 +14,7 @@ struct SeasonsView: View {
     
     var body: some View {
         ZStack {
-            Text("Hello Root")
+            Text("Hello Seasons")
         }
         .bind(lifeCycle: vm)
     }

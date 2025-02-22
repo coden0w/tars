@@ -27,7 +27,7 @@ struct TabBarItemView: View {
                 
                 Text(text)
                     .font(.caption)
-                    .foregroundStyle(isSelected ? .mint : .gray)
+                    .foregroundStyle(isSelected ? Color.black : Color.gray)
                     .lineLimit(1)
             }
         }
